@@ -54,8 +54,8 @@ class Calculation extends Subjects{
 
 }
 
-public class StudentGrade {
-    public static void main(String[] args) {
+class Display{
+    public void dis(){
         Calculation c = new Calculation();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Student Name: ");
@@ -64,5 +64,12 @@ public class StudentGrade {
         c.Tmarks();
         c.AverageMarks();
         c.Grade();
+    }
+}
+
+public class StudentGrade {
+    public static void main(String[] args) {
+        Display display = new Display();
+        display.dis();
     }
 }
